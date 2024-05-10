@@ -2,6 +2,11 @@ body {
     background-color: #002A32;
     overflow: hidden;
 }
+
+::-webkit-scrollbar {
+    background-color: #002A32;
+}
+
 /*fonts*/
 @font-face {
     font-family: titleText;
@@ -16,6 +21,7 @@ body {
 /*header css*/
 #header {
     position: absolute;
+    overflow: hidden;
     top: 0%;
     left: 0%;
     height: 9%;
@@ -55,6 +61,7 @@ body {
     color: whitesmoke;
     font-size: 40px;
     font-family: titleText;
+    user-select: none;
 }
 
 .contentBodyText {
@@ -62,6 +69,7 @@ body {
     color: whitesmoke;
     font-size: 20px;
     letter-spacing: 1px;
+    user-select: none;
 }
 
 .contentBodyImage {
@@ -69,7 +77,32 @@ body {
     left: 50%;
     transform: translate(-50%, 0%);
     height: auto;
-    width: 400px;
+    width: 96%;
+    padding-left: 2%;
+    padding-right: 2%;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+.contentBodyVideo {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    user-select: none;
+}
+.contentBodyEmbed {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    min-height: 30%;
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+    user-select: none;
 }
 
 /*sidebar css*/
@@ -86,6 +119,7 @@ body {
 
 #sidebarHandle {
     position: absolute;
+    overflow: hidden;
     top: 0%;
     left: 0%;
     transform: translate(-99%, 0%);
@@ -109,6 +143,7 @@ body {
 
 #sidebarContent {
     position: absolute;
+    overflow: hidden;
     top: 0%;
     left: 0%;
     height: 100%;
@@ -133,6 +168,7 @@ body {
     font-size: x-large;
     font-family: pageText;
     background-color: #002A32;
+    user-select: none;
 }
 .sidebarNavBox:hover {
     background-color: #00333e;
@@ -151,9 +187,6 @@ body {
 
 /*mobile optimisations*/
 @media (min-width: 320px) and (max-width:999px) {
-    body {
-        overflow: hidden;
-    }
 
     #contentBody {
         width: 100%;
@@ -175,5 +208,8 @@ body {
     
     #sidebarBody {
         width: 75%;
+    }
+    #sidebarHandleIcon {
+        font-size: 40px;
     }
 }
