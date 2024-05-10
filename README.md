@@ -1,3 +1,17 @@
+USE VISUAL STUDIO CODE
+      ↪plugins to use:
+      
+      Name: HTML CSS Support
+      https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css
+
+      Name: JavaScript and TypeScript Nightly
+      https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-typescript-next
+
+      Name: Live Server
+      https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer
+
+
+
 to add title do:
 ```<p class='contentBodyTitle'>*your text*</p>```
 
