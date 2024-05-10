@@ -8,7 +8,8 @@ to add image do:
 ```<img class='contentBodyImage' src="./Images/*filename*.png">```
 
 to add local video do:
-```<video class='contentBodyVideo'>
+```
+<video class='contentBodyVideo'>
  <source src="./Videos/*filename*.mp4">
 </video>
 ```
