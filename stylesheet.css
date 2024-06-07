@@ -105,6 +105,30 @@ body {
     user-select: none;
 }
 
+.buttonLink {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: whitesmoke;
+    background-color: #011114;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
 /*sidebar css*/
 #sidebarBody {
     position: absolute;
